@@ -8,9 +8,6 @@ body {
     padding: 0;
     /* centre align all content */
     text-align: center;
-
-    /* constrain image width so it doesn't clip on mobile */
-    max-width: 100%;
 }
 
 header {
@@ -47,6 +44,11 @@ nav a {
 
 main {
     padding: 2em;
+    text-align: center;
+
+    /* limit the width to 600px and center-align */
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 section img {
@@ -55,9 +57,12 @@ section img {
 }
 
 section h2 {
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 2em;
     margin-bottom: 1em;
 }
 
+/* 
 .download-button {
+} 
+*/
