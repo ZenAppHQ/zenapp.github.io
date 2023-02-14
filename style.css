@@ -21,6 +21,11 @@ header h1 {
     font-size: 24px;
 }
 
+h3 {
+    color: rgb(124, 117, 117);
+}
+
+
 nav {
     display: inline-block;
 }
