@@ -30,6 +30,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Generate Markdown
+        uses: ZacJW/markdown-html-action@1.1.0
+        with:
+          input_files: '[["release-notes/*.md"]]'
+          output_files: '["release-notes/index.html"]'
+          builtin_stylesheet: 'style.css'
+          packages: 'pymdown-extensions'
+          extensions: '["pymdownx.extra"]'
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
